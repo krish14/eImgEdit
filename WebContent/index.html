@@ -8,9 +8,9 @@
 <link href="css/custom.css" rel="stylesheet"></link>
 <link href="css/cropper.css" rel="stylesheet"></link>
 </head>
-<body>
+<body onload="onload()">
 	<div class="container">
-		<h2 style="text-align: center;">eImgEdit - Modal Demo</h2>
+		<h2 style="text-align: center;">eImgEdit - ModaL Demo</h2>
 				<hr>
 		<div class="row text-center">
 			<h3>The Large Modal</h3>
@@ -32,7 +32,11 @@
 					<h4 class="modal-title" id="myModalLabel">Large Modal</h4>
 				</div>
 				<div class="modal-body">
-					<h3>Modal Body</h3>
+
+
+					<canvas  id="myImage" width="500" height="328"></canvas>
+					<img id='result'></img>
+
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -46,6 +50,8 @@
 	<script src="js/cropper.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/base64.js"></script>
+	<script src="js/canvas2image.js"></script>
 
 </body>
 </html>
