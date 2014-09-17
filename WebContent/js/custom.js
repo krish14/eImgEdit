@@ -24,8 +24,17 @@ $('#result').attr({
 
 }
 $(document).ready(function () {
-
-
+	
+	var imgUrlToJson = {};
+	imgUrlToJson["a1"] = 'b1';
+	imgUrlToJson["a2"] = 'b2';
+	imgUrlToJson["a3"] = 'b3';
+	imgUrlToJson["a4"] = 'b4';
+	
+	var srcUrl=JSON.stringify(imgUrlToJson);
+	document.getElementById("test").innerHTML = srcUrl;
+	alert(srcUrl);
+	
 });
 
 
